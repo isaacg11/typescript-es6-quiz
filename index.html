@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <h1>Quiz App</h1>
+    <h5>Answer Question</h5>
+
+    <input type="text" id="answerInput" />
+
+
+    <p id="questionOutput"></p>
+    <p id="opt1"></p>
+    <p id="opt2"></p>
+    <p id="opt3"></p>
+    <p id="opt4"></p>
+
+    <div>
+      <button type="button" onClick="startQuiz()">START QUIZ</button>
+      <button type="button" onClick="nextQuestion()">NEXT</button>
+    </div>
+
+    <div style="border-top: 1px solid #DDDDDD; padding-top: 25px; margin-top: 25px;">
+      <h5>Add Question</h5>
+      <input type="text" id="newQuestion" placeholder="QUESTION"/>
+      <input type="text" id="newAnswer" placeholder="ANSWER"/>
+      <input type="text" id="newOpt1" placeholder="OPTION#1"/>
+      <input type="text" id="newOpt2" placeholder="OPTION#2"/>
+      <input type="text" id="newOpt3" placeholder="OPTION#3"/>
+      <input type="text" id="newOpt4" placeholder="OPTION#4"/>
+
+      <div>
+        <button type="button" onClick="addNewQuestion()">ADD</button>
+      </div>
+
+    </div>
+
+    <!-- app scripts -->
+    <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>
